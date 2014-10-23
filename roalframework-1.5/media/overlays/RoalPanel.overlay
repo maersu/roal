@@ -1,0 +1,16 @@
+
+RoalCore/RoalOverlay
+{
+	zorder 500
+	container Panel(RoalCore/LogoPanel)
+	{	
+		metrics_mode pixels
+		horz_align right
+		vert_align bottom
+		top -80
+		left -190
+		width 183
+		height 73
+		material RoalCore/RoalLogo
+	}
+}

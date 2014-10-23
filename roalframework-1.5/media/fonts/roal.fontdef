@@ -1,0 +1,16 @@
+
+TrebuchetMSBold
+{
+	type 		truetype
+	source 		trebucbd.ttf
+	size 		50
+	resolution 	100
+}
+
+AndaleMono
+{
+	type 		truetype
+	source 		Andale_Mono.ttf
+	size 		50
+	resolution 	100
+}

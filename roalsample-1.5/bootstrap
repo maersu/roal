@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -x
+rm -f config.cache &&
+rm -drf autom4te.cache &&
+libtoolize --force &&
+aclocal &&
+autoconf &&
+autoheader &&
+automake --foreign --add-missing --include-deps

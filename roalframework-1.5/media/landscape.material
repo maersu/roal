@@ -1,0 +1,191 @@
+
+material landscape/labground
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tiled.png
+                tex_address_mode wrap
+                scale 0.01 0.01
+			}
+		}
+	}
+}
+
+material landscape/labsky
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+            fog_override true
+            
+			texture_unit
+			{
+				texture clouds.jpg
+				scroll_anim 0.01 0
+			}
+		}
+	}
+}
+
+material landscape/marslowsky
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+            fog_override true
+            
+			texture_unit
+			{
+                cubic_texture marslow_fr.jpg marslow_bk.jpg marslow_lf.jpg marslow_rt.jpg marslow_up.jpg marslow_dn.jpg separateUV
+                tex_address_mode clamp
+            }
+        }
+    }
+}
+
+material landscape/marslowground
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture marslow_dn.jpg
+                tex_address_mode mirror
+                scale 0.25 0.25
+			}
+		}
+	}
+}
+
+material landscape/marshighsky
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+            fog_override true
+            
+			texture_unit
+			{
+                cubic_texture marshigh_fr.jpg marshigh_bk.jpg marshigh_lf.jpg marshigh_rt.jpg marshigh_up.jpg marshigh_dn.jpg separateUV
+                tex_address_mode clamp
+            }
+        }
+    }
+}
+
+material landscape/marshighground
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture marshigh_dn.jpg
+                tex_address_mode mirror
+                scale 0.25 0.25
+			}
+		}
+	}
+}
+
+material landscape/desertsky
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+            fog_override true
+            
+			texture_unit
+			{
+                cubic_texture desert_fr.jpg desert_bk.jpg desert_lf.jpg desert_rt.jpg desert_up.jpg desert_dn.jpg separateUV
+                tex_address_mode clamp
+            }
+        }
+    }
+}
+
+material landscape/desertground
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture desert_dn.jpg
+                tex_address_mode mirror
+                scale 0.1 0.1
+			}
+		}
+	}
+}
+
+material landscape/mountainsky
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+            fog_override true
+            
+			texture_unit
+			{
+                cubic_texture mountain_fr.jpg mountain_bk.jpg mountain_lf.jpg mountain_rt.jpg mountain_up.jpg mountain_dn.jpg separateUV
+                tex_address_mode clamp
+            }
+        }
+    }
+}
+
+material landscape/mountainground
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture mountain_dn.jpg
+                tex_address_mode mirror
+                scale 0.25 0.25
+			}
+		}
+	}
+}
+
+material landscape/grassground
+{
+	technique
+	{
+		pass
+		{
+			specular 0.2 0.4 0.2 0.5 10
+			texture_unit
+			{
+				texture grass.jpg
+                scale 0.01 0.01
+			}
+		}
+	}
+}
